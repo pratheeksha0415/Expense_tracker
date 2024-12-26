@@ -4,9 +4,6 @@ This repository contains the SQL schema for an **Expense Tracker** application. 
 
 ## Tables
 
-### 1. **User Table**
-
-This table stores information about the users of the system.
 
 ```sql
 CREATE TABLE User (
@@ -16,6 +13,7 @@ CREATE TABLE User (
     password VARCHAR(255) NOT NULL, -- Password field to store the hashed password
     date_joined DATE NOT NULL
 );
+
 CREATE TABLE Account (
     account_id INT AUTO_INCREMENT PRIMARY KEY, 
     user_id INT NOT NULL, 
