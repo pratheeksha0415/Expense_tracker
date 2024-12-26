@@ -1,5 +1,14 @@
-# Expense_tracker
-<b>Create Tables in Xammp<b>
+# Expense Tracker Database Schema
+
+This repository contains the SQL schema for an **Expense Tracker** application. The schema includes tables for managing users, accounts, transactions, categories, budgets, and the relationship between transactions and categories.
+
+## Tables
+
+### 1. **User Table**
+
+This table stores information about the users of the system.
+
+```sql
 CREATE TABLE User (
     user_id INT AUTO_INCREMENT PRIMARY KEY, 
     name VARCHAR(100) NOT NULL, 
@@ -7,7 +16,6 @@ CREATE TABLE User (
     password VARCHAR(255) NOT NULL, -- Password field to store the hashed password
     date_joined DATE NOT NULL
 );
-
 CREATE TABLE Account (
     account_id INT AUTO_INCREMENT PRIMARY KEY, 
     user_id INT NOT NULL, 
@@ -48,4 +56,6 @@ CREATE TABLE TC (
     PRIMARY KEY (transaction_id, category_id),
     FOREIGN KEY (transaction_id) REFERENCES Transaction(transaction_id), 
     FOREIGN KEY (category_id) REFERENCES Category(category_id)
-);
+);this the content i wnt to put in y git read me file, make this content look proper, as in in the stucture, give it the proper stucture
+
+
