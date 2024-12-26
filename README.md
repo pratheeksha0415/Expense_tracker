@@ -1,5 +1,5 @@
 # Expense_tracker
-Create Tables in Xammp
+<b>Create Tables in Xammp<b>
 CREATE TABLE User (
     user_id INT AUTO_INCREMENT PRIMARY KEY, 
     name VARCHAR(100) NOT NULL, 
